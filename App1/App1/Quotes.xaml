@@ -2,9 +2,9 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App1.Quotes">
-    <ContentPage.Content>
+
         <ContentPage.Padding>
-            <OnPlatform x:DataType="Thickness" iOS="0, 20, 0, 0">
+            <OnPlatform x:DataType="Thickness" iOS="20, 20, 20, 20" Android="20, 20, 20, 20">
                 
             </OnPlatform>
         </ContentPage.Padding>
@@ -14,5 +14,5 @@
             <Slider x:Name="fontSlider" Maximum="50" Minimum="16"/>
             <Label x:Name="quotes" FontSize="{Binding Source={x:Reference fontSlider}, Path=Value}"/>
         </StackLayout>
-    </ContentPage.Content>
+
 </ContentPage>
